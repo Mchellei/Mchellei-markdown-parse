@@ -25,5 +25,7 @@ public class MarkdownParse {
 	    String contents = Files.readString(fileName);
         ArrayList<String> links = getLinks(contents);
         System.out.println(links);
+        System.out.println("currentIndex have 2 different values when ran on the given example.");
+        System.out.println("The second argument to indexOf gives the index of the ] character which lets the program know where the end of [ is. ");
     }
 }
