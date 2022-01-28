@@ -1,2 +1,2 @@
-[a link!](https://website.com)
-[another link!](website.html)
+[a link!](https://example.com)
+[another link!](example.html)
