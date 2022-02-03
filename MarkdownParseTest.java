@@ -80,10 +80,7 @@ public class MarkdownParseTest {
     @Test
     public void testFile8() throws IOException {
         String contents= Files.readString(Path.of("/Users/michellechen/Documents/GitHub/markdown-parse/test-file8.md"));
-        List<String> expect = new ArrayList<>();
-        expect.add("https://something.com");
-        expect.add("some-page.html");
-   
+        List<String> expect = List.of("a link on the first line");
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
     

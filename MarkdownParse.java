@@ -14,7 +14,7 @@ public class MarkdownParse {
                 break;
             }
             int nextOpenBracket = markdown.indexOf("[", currentIndex);
-            if (markdown.charAt(nextOpenBracket - 1) == '!') {
+            if (nextOpenBracket!=0 && markdown.charAt(nextOpenBracket - 1) == '!') {
                 currentIndex = nextOpenBracket + 1;
                 continue;
             }
@@ -32,6 +32,8 @@ public class MarkdownParse {
             currentIndex = closeParen + 1;
         }
         return toReturn;
+    
+
     }
 
     public static void main(String[] args) throws IOException {
@@ -39,6 +41,7 @@ public class MarkdownParse {
 	    String contents = Files.readString(fileName);
         ArrayList<String> links = getLinks(contents);
         System.out.println(links);
+       
     }
 }
 
