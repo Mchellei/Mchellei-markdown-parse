@@ -21,7 +21,7 @@ public class MarkdownParseTest {
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
 
-    @Test
+   /* @Test
     public void test2() throws IOException {
         String contents= Files.readString(Path.of("/Users/michellechen/Documents/GitHub/markdown-parse/test-2.md"));
         List<String> expect = List.of("https://test2.com", "test2.html");
@@ -83,7 +83,7 @@ public class MarkdownParseTest {
         String contents= Files.readString(Path.of("/Users/michellechen/Documents/GitHub/markdown-parse/test-file8.md"));
         List<String> expect = List.of("a link on the first line");
         assertEquals(MarkdownParse.getLinks(contents), expect);
-    }
+    }*/
     
     
 }
