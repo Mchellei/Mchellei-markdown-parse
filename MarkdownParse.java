@@ -23,6 +23,9 @@ public class MarkdownParse {
                 break;
             }
             int openParen = markdown.indexOf("(", nextCloseBracket);  
+            if (openParen == -1) {
+                break;
+            }
             int closeParen = markdown.indexOf(")", openParen);
             if (closeParen == -1) {
                 break;
@@ -30,10 +33,9 @@ public class MarkdownParse {
             
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
-        }
+        } 
         return toReturn;
     
-
     }
 
     public static void main(String[] args) throws IOException {
