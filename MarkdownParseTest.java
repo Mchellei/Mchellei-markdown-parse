@@ -9,7 +9,7 @@ import java.util.List;
 
 
 public class MarkdownParseTest {
-  /*  @Test
+  @Test
     public void addition() {
         assertEquals(2, 1 + 1);
     }
@@ -75,7 +75,7 @@ public class MarkdownParseTest {
         String contents= Files.readString(Path.of("/Users/michellechen/Documents/GitHub/markdown-parse - Mchellei/test-file8.md"));
         List<String> expect = List.of("a link on the first line");
         assertEquals(MarkdownParse.getLinks(contents), expect);
-    }*/
+    }
     @Test
     public void testSnippet1() throws IOException {
         String contents = Files.readString(Path.of("/Users/michellechen/Documents/GitHub/markdown-parse - Mchellei/Snippet1.md"));
